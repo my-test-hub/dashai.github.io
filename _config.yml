@@ -1,0 +1,52 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: dashai - YOUR DevOps Dashboard
+host: 0.0.0.0
+#email: your-email@example.com
+address: Arctiq, 41 Britain Street, Suite 203, Toronto, ON, M5A 1R7, Canada
+description: > # this means to ignore newlines until "baseurl:"
+  Dashai ... Your DevOps Dashboard.  Brought to you by the Arctiq Team (www.arctiq.ca), Dashai is a customizable, simple, extensible dashboarding software.  Developed completely using open source software, and released as a community project for all to collaborate and enjoy!
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://www.dashai.org" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: ArctiqTeam
+github_username:  ArctiqTeam
+# Build settings
+markdown: kramdown
+google_analytics: true
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-sitemap
+  - jemoji
+
+# defaults:
+#   -
+#     scope:
+#       path: ""
+#     values:
+#       layout: "page"
+
+repository: dashai/dashai.github.io
+exclude:
+  - empty_folder*
+  - bundle/
+  - Dockerfile*
+  - Gemfile*
+  - docker-compose.yml
+  - Jenkinsfile
+  - CNAME
+  - CONTRIBUTING.md
+  - README.md

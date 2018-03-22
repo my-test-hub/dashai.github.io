@@ -9,6 +9,11 @@
 nav ul a,
 nav .brand-logo {
   color: #444;
+  /* padding-top: 0.5em; */
+}
+
+nav .brand-logo {
+  padding-top: 0.5em;
 }
 
 p {
@@ -18,6 +23,34 @@ p {
 .button-collapse {
   color: #26a69a;
 }
+
+#index-banner .container {
+  padding-top: 20vh;
+}
+
+#index-banner {
+  height: 94vh;
+  position: relative;
+}
+
+/* .parallax {
+  display: block;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.parallax::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(24,54,105,0.6);
+
+} */
 
 .parallax-container {
   min-height: 380px;
