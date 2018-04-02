@@ -6,6 +6,35 @@
  * Made By MaterializeCSS.com
  */
 
+ @media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    /* position: absolute;
+    top: 40%; */
+  }
+  #index-banner .section {
+    /* top: 40%; */
+    padding-top: 30%;
+  }
+  /* .logo {
+    position: relative;
+  }
+  .logo img {
+    position: relative;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+  } */
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    /* top: 40%; */
+    padding-top: 30%;
+  }
+}
+
 html {
   background-color: rgb(24,54,105);
 }
@@ -86,24 +115,6 @@ h4,h5 {
   color: white !important;
   font-size: 10px !important;
 }
-/* .parallax {
-  display: block;
-  position: relative;
-  background-size: cover;
-  background-position: center;
-}
-
-.parallax::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(24,54,105,0.6);
-
-} */
 
 .parallax-container {
   min-height: 380px;
@@ -115,22 +126,6 @@ h4,h5 {
     width: 100%;
   }
 
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
-}
-
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    /* top: 0; */
-  }
-}
-
 .icon-block {
   padding: 0 15px;
 }
@@ -140,4 +135,29 @@ h4,h5 {
 
 footer.page-footer {
   margin: 0;
+}
+
+.logo img {
+  max-width: 150px;
+  filter: brightness(0) invert(1);
+  -webit-filter: brightness(0) invert(1);
+  /* filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  filter: gray; */
+}
+
+.logo-row {
+  /* margin-top: 10%; */
+  /* transform: translateY(-50%); */
+}
+.logo {
+  position: relative;
+}
+.logo img {
+  position: absolute;  
+  top: 0;  
+  bottom: 0;  
+  left: 0;  
+  right: 0;  
+  margin: auto;
 }
