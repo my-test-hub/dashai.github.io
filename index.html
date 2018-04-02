@@ -9,36 +9,63 @@ image_sliders_load_all: true
       <div class="container">
         <br><br>
         <h1 class="header center white-text text-lighten-2">YOUR DevOps Dashboard</h1>
+        <!-- <div class="screenshots">
+          <div class="slider">
+              <ul class="slides">
+                <li>
+                  <img src="/img/screens/screen1.png">
+                </li>
+                <li>
+                  <img src="/img/screens/screen2.png">
+                </li>
+                <li>
+                  <img src="/img/screens/screen3.png">
+                </li>
+              </ul>
+          </div>
+        </div> -->
+        <!-- <div class="center">
+          <img class="materialboxed center" width="650" src="/img/screens/screen1.png">
+        </div> -->
         <div class="row center">
-          <h5 class="header col s12 light">A customizable, extensible, open source dashboard by Arctiq</h5>
+          <!-- <div class="col s6"> -->
+            <div class="fade center">
+                <div><img class="center" src="/img/screens/screen1.png"></div>
+                <div><img class="center" src="/img/screens/screen2.png"></div>
+                <div><img class="center" src="/img/screens/screen3.png"></div>
+            </div>
+          <!-- </div> -->
         </div>
         <div class="row center">
+            <h5 class="header col s12 light">A customizable, extensible, open source dashboard by Arctiq</h5>
+        </div>  
+        <!-- <div class="row center">
           <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light grey darken-1">Get Started</a>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="parallax"><img src="img/dashboard-blue.png" alt="Unsplashed background img 1"></div>
   </div>
 
 
-  <div class="container">
-    <div class="section">
+  <div class="container feature-block">
+    <div id="features" class="section">
 
       <!--   Icon Section   -->
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
+            <h2 class="center white-text"><i class="material-icons">developer_board</i></h2>
+            <h5 class="center">Gain Visibility</h5>
 
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+            <p class="light">Dash&atilde;i's flexible dashboards help gain visibility across boundries. No longer do dashboards need to be strictly operational, or stricly development focused. Dash&atilde;i brings information together into seamless dashboards, giving you views into your environment you've not had before. </p>
           </div>
         </div>
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
+            <h2 class="center white-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">Extensible</h5>
 
             <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
           </div>
@@ -46,7 +73,7 @@ image_sliders_load_all: true
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+            <h2 class="center white-text"><i class="material-icons">settings</i></h2>
             <h5 class="center">Easy to work with</h5>
 
             <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
@@ -94,3 +121,31 @@ image_sliders_load_all: true
     </div>
     <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
   </div>
+<script>
+    $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+    $(document).ready(function(){
+      $('.materialboxed').materialbox();
+      $('.fade').slick({
+        dots: true,
+        arrows: true,
+        infinite: true,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
+      });
+    });
+</script>
