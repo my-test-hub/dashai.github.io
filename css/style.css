@@ -137,15 +137,6 @@ footer.page-footer {
   margin: 0;
 }
 
-.logo img {
-  max-width: 150px;
-  filter: brightness(0) invert(1);
-  -webit-filter: brightness(0) invert(1);
-  /* filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  filter: gray; */
-}
-
 .logo-row {
   /* margin-top: 10%; */
   /* transform: translateY(-50%); */
@@ -154,10 +145,22 @@ footer.page-footer {
   position: relative;
 }
 .logo img {
+  max-width: 150px;
+  filter: brightness(0) invert(1);
+  -webit-filter: brightness(0) invert(1);
   position: absolute;  
   top: 0;  
   bottom: 0;  
   left: 0;  
   right: 0;  
   margin: auto;
+}
+.logo-small img {
+  max-width: 150px;
+  filter: brightness(0) invert(1);
+  -webit-filter: brightness(0) invert(1);
+}
+
+.social-icons i {
+  color: #fff;
 }
