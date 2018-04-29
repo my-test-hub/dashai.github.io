@@ -45,6 +45,15 @@ nav .brand-logo {
   /* padding-top: 0.5em; */
 }
 
+.side-nav li > a {
+  color: #fff;
+}
+.side-nav {
+  background-color: #757575;
+  text-transform: uppercase;
+  font-size: 1.25em !important;
+}
+
 nav {
   position: absolute;
   overflow: visible !important;
