@@ -5,4 +5,4 @@ jekyll:
         - 4001:4000
         - 35730:35729
     volumes:
-        - /root/src/github.com/dashai/dashai.github.io:/srv/jekyll:Z
+        - /app:/srv/jekyll:Z

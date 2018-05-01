@@ -8,11 +8,10 @@ build:
     options: "-v /app:/app"
   ci:
     - cp -R . /app
+    - chmod -R 0777 /app
     - pip install -U docker-compose
-    - chmod -R 0777 *
-    - docker-compose -f docker-compose-shippable.yml up -d
+    - docker-compose -f /app/docker-compose-shippable.yml up -d
     - sleep 10
-    - docker-compose -f docker-compose-shippable.yml logs
-    - ls -la
-    - pwd
+    - docker-compose -f /app/docker-compose-shippable.yml logs
+    - ls -la /app
     - docker-compose down
