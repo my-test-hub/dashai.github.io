@@ -14,5 +14,5 @@ build:
     - docker-compose -f /app/docker-compose-shippable.yml up -d
     - sleep 10
     - docker-compose -f /app/docker-compose-shippable.yml logs
-    - ls -la /app
     - docker-compose down
+    - docker run -v /app:/site 18fgsa/html-proofer /site
