@@ -15,4 +15,4 @@ build:
     - sleep 10
     - docker-compose -f /app/docker-compose-shippable.yml logs
     - docker-compose down
-    - docker run --network="host" -v $(pwd)/_site:/site 18fgsa/html-proofer --assume_extension --allow_hash_href /site
+    - docker run --network="host" -v /app:/site 18fgsa/html-proofer --assume_extension --allow_hash_href /site
