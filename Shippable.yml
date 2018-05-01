@@ -9,6 +9,7 @@ build:
   ci:
     - cp -R . /app
     - pip install -U docker-compose
+    - chmod -R 0777 *
     - docker-compose -f docker-compose-shippable.yml up -d
     - sleep 10
     - docker-compose -f docker-compose-shippable.yml logs
