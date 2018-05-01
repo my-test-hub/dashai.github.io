@@ -1,8 +1,0 @@
-jekyll:
-    image: jekyll/jekyll:pages
-    command: jekyll serve --drafts
-    ports:
-        - 4001:4000
-        - 35730:35729
-    volumes:
-        - /app:/srv/jekyll:Z
