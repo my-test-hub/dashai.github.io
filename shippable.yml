@@ -3,8 +3,7 @@ build:
     image_name: arctiqteam/jekyll-ci
     image_tag: latest
     pull: true
-    options: "-e HOME=/root"
-    options: "-v /app:/srv/jekyll"
+    options: -v /app:/srv/jekyll
   ci:
     - pwd
     - ls -l
