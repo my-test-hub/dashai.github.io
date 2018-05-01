@@ -18,5 +18,5 @@ build:
     - bundle install
     - bundle exec jekyll serve --trace --detach
     - ls -la
-    - docker run --network="host" -v $(pwd)/_site:/site 18fgsa/html-proofer --assume_extension --allow_hash_href /site
+    - docker run --network="host" -v /root/src/github.com/dashai/dashai.github.io/_site:/site 18fgsa/html-proofer --assume_extension --allow_hash_href /site
 
