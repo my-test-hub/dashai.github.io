@@ -1,8 +1,8 @@
 jekyll:
     image: jekyll/jekyll:pages
-    command: jekyll serve --watch --drafts --incremental
+    command: jekyll serve --drafts
     ports:
         - 4001:4000
         - 35730:35729
     volumes:
-        - .:/srv/jekyll:Z
+        - /root/src/github.com/dashai/dashai.github.io:/srv/jekyll:Z
