@@ -1,10 +1,8 @@
-version: '2'
-services:
-  web:
-    build: .
+jekyll:
+    image: jekyll/jekyll:pages
+    command: jekyll serve --drafts
     ports:
-     - "5000:5000"
+        - 4001:4000
+        - 35730:35729
     volumes:
-     - /app:/app
-  redis:
-    image: "redis:alpine"
+        - .:/srv/jekyll:Z

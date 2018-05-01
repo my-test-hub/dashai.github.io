@@ -9,9 +9,8 @@ build:
   ci:
     - cp -R . /app
     - pip install -U docker-compose
-    - docker-compose up -d web redis
+    - docker-compose up -d
     - sleep 10
-    - docker exec cidockercompose_web_1 ls -alh /
-    - docker exec cidockercompose_web_1 ls -alh /code
-    - docker exec cidockercompose_web_1 ls -alh /app
+    - ls -la
+    - pwd
     - docker-compose down
