@@ -1,0 +1,22 @@
+# Documentation: http://docs.shippable.com/en/latest/languages/ruby.html
+
+# Language
+language: ruby
+
+# Cache dependencies for faster builds
+cache: true
+
+# Version Numbers
+#- 2.0.0, 2.1.2
+rvm:
+ - 2.5.1
+
+gemfile: Gemfile.ci
+
+build:
+  ci:
+    - bundle install
+    - bundle exec jekyll serve --trace --detach
+    - ls -la
+    - docker run --network="host" -v /root/src/github.com/dashai/dashai.github.io/_site:/site 18fgsa/html-proofer --assume_extension --allow_hash_href /site
+
