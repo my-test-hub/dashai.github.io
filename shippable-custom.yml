@@ -1,0 +1,12 @@
+build:
+  pre_ci_boot:
+    image_name: arctiqteam/jekyll-ci
+    image_tag: latest
+    pull: true
+    options: -v /app:/srv/jekyll
+  ci:
+    - pwd
+    - ls -l
+    - jekyll serve --drafts --detach --trace
+    - /usr/gem/bin/htmlproofer --assume_extension --allow_hash_href ./_site
+    - ls -l
