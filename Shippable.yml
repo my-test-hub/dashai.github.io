@@ -1,0 +1,17 @@
+language: python
+
+python:
+  - 3.6
+
+build:
+  pre_ci_boot:
+    options: "-v /app:/app"
+  ci:
+    - cp -R . /app
+    - pip install -U docker-compose
+    - docker-compose up -d web redis
+    - sleep 10
+    - docker exec cidockercompose_web_1 ls -alh /
+    - docker exec cidockercompose_web_1 ls -alh /code
+    - docker exec cidockercompose_web_1 ls -alh /app
+    - docker-compose down
