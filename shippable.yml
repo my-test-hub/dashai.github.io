@@ -11,4 +11,4 @@ build:
     - cp -R . /app
     - chmod -R 0777 /app
     - docker run --network="host" -v /app:/srv/jekyll jekyll/jekyll:pages jekyll serve --drafts --detach --trace
-    - docker run --network="host" -v /app/_site:/site 18fgsa/html-proofer --assume_extension --allow_hash_href /site
+    - docker run --network="host" -v /app/_site:/site 18fgsa/html-proofer --assume_extension --allow_hash_href --empty_alt_ignore --check_html /site
