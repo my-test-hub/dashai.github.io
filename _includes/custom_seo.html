@@ -5,8 +5,8 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}" />
 <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt }}{% else %}{{ site.description }}{% endif %}" />
-<link rel="canonical" href="{{ site.url }}{{ page.url }}" />
-<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+<link rel="canonical" data-proofer-ignore href="{{ site.url }}{{ page.url }}" />
+<meta property="og:url" data-proofer-ignore content="{{ site.url }}{{ page.url }}" />
 <meta property="og:site_name" content="dashai - YOUR DevOps Dashboard" />
 {% if page.is_post %}
 {% capture imagePath %}{{ page.slug }}/{{ page.image }}{% endcapture %}
