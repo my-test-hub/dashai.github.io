@@ -1,0 +1,48 @@
+<div class="row">
+    <form method="post" name="Slack Signup" action="https://hooks.zapier.com/hooks/catch/1379131/f0z76d/" class="col s12">
+      <div class="row">
+        <div class="input-field col m5 s12">
+            <label for="NAME">Name</label>
+            <input type="text" value="" name="NAME" id="NAME" placeholder="" required>
+        </div>
+        <div class="input-field col m5 s12">
+            <label for="EMAIL">Email</label>
+            <input type="email" value="" name="EMAIL" id="EMAIL" placeholder="" required>
+        </div>
+      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="asfdasdfasdfasd" tabindex="-1" value=""></div>
+        <div id="server-results"><!--This is for the response messages--></div>      
+        <div class="input-field col m2 s12">
+          <button type="submit" id="form-submit" class="waves-effect waves-light btn">Signup</button>
+        </div>
+      </div>
+    </form>
+</div>
+<!-- <script>
+// POST form data to zapier on submit
+$("#{{ page.title | downcase | replace: " ", "-" }}").submit(function(event){
+event.preventDefault(); //prevent default action
+var post_url = $(this).attr("action"); //get form action url
+var request_method = $(this).attr("method"); //get form GET/POST method
+var form_data = $(this).serialize(); //Encode form elements for submission
+var success_msg = "<span><strong>Thank You for Registering!</strong> See You at the Event!</span><br>"
+var error_msg = "<span><strong>Sorry, there was an error with your submission.</strong> Please make sure all required fields have been completed and try again.</span><br>"
+
+$('#event-form-submit').html('<i class="fa fa-spinner fa-spin fa-fw" style="color: #fff;"></i>  Loading...');
+$.ajax({
+    url: post_url,
+    type: request_method,
+    data: form_data,
+    success: function (data) {
+    $("#server-results").html(success_msg);
+    $("#event-form-submit").addClass('w3-hide');
+    $("#{{ page.title | downcase | replace: " ", "-" }}").trigger("reset");
+    },
+    error: function (err) {
+    $("#server-results").html(error_msg);
+    $('#event-form-submit').html('Register');
+    }
+});
+});
+</script> -->
+  
