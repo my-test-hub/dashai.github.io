@@ -18,7 +18,7 @@ host: 0.0.0.0
 #email: your-email@example.com
 address: Arctiq, 41 Britain Street, Suite 203, Toronto, ON, M5A 1R7, Canada
 description: > # this means to ignore newlines until "baseurl:"
-  Dashai ... Your DevOps Dashboard.  Brought to you by the Arctiq Team (www.arctiq.ca), Dashai is a customizable, simple, extensible dashboarding software.  Developed completely using open source software, and released as a community project for all to collaborate and enjoy!
+  dashai ... Your DevOps Dashboard.  Brought to you by the Arctiq Team (www.arctiq.ca), dashai is a customizable, simple, extensible dashboarding software.  Developed completely using open source software, and released as a community project for all to collaborate and enjoy!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.dashai.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ArctiqTeam
